@@ -7,7 +7,8 @@ def InputTree(tree,entrylist=None):
     if hasattr(tree, '_ttreereader'): return tree # don't initialize twice
     tree.entry = -1
     tree._entrylist = entrylist
-    tree._ttreereader = ROOT.TTreeReader(tree,tree._entrylist)
+    # tree._ttreereader = ROOT.TTreeReader(tree,tree._entrylist)
+    tree._ttreereader = ROOT.TTreeReader(tree)
     tree._ttreereader.SetEntry(0)
     tree._ttrvs = {}
     tree._ttras = {}
@@ -82,7 +83,7 @@ def _makeValueReader(tree, typ, nam, remakeAllFirst=True):
     return tree._ttrvs[nam]
 
 def _remakeAllReaders(tree):
-    _ttreereader = ROOT.TTreeReader(tree, getattr(tree, '_entrylist', None))
+    _ttreereader = ROOT.TTreeReader(tree)
     _ttrvs = {}
     for k in tree._ttrvs.iterkeys():
         _ttrvs[k] = ROOT.TTreeReaderValue(tree._leafTypes[k])(_ttreereader,k)
