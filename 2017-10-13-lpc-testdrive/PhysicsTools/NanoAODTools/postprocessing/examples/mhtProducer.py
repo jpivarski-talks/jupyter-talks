@@ -18,7 +18,7 @@ class mhtProducer(Module):
         self.out = wrappedOutputTree
         self.out.branch("MHT_pt",  "F");
         self.out.branch("MHT_phi", "F");
-        self.out.branch("Jet_mhtCleaning", "b", lenVar="nJet")
+        # self.out.branch("Jet_mhtCleaning", "b", lenVar="nJet")
     def endFile(self, inputFile, outputFile, inputTree, wrappedOutputTree):
         pass
     def analyze(self, event):
@@ -32,7 +32,7 @@ class mhtProducer(Module):
             mht += lep.p4()
         for lep in filter(self.elSel,electrons):
             mht += lep.p4()
-        goodjet = [ 0 for i in xrange(njets) ]
+        # goodjet = [ 0 for i in xrange(njets) ]
         for i,j in enumerate(jets):
             if not self.jetSel(j): continue
             # if j.muonIdx1 != -1 and j.muonIdx1 < njets:
@@ -43,11 +43,11 @@ class mhtProducer(Module):
             #     if self.elSel(electrons[j.electronIdx1]): continue # prefer the electron
             # if j.electronIdx2 != -1 and j.electronIdx2 < njets:
             #     if self.elSel(electrons[j.electronIdx2]): continue # prefer the electron
-            goodjet[i] = 1
+            # goodjet[i] = 1
             mht += j.p4()
         self.out.fillBranch("MHT_pt", mht.Pt())
         self.out.fillBranch("MHT_phi", -mht.Phi()) # note the minus
-        self.out.fillBranch("Jet_mhtCleaning", goodjet)
+        # self.out.fillBranch("Jet_mhtCleaning", goodjet)
         return True
 
 
