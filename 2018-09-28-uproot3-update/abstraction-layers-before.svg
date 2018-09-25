@@ -201,10 +201,10 @@
        id="linearGradient1437"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-45.328373)"
-       x1="85.558479"
-       y1="199.5681"
-       x2="100.31136"
-       y2="153.81326" />
+       x1="98.931259"
+       y1="191.7661"
+       x2="102.63543"
+       y2="180.40715" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1127"
@@ -234,6 +234,16 @@
        y1="178.66869"
        x2="96.083389"
        y2="139.91461" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient897"
+       id="linearGradient918"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-45.328379,26.858474)"
+       x1="98.931267"
+       y1="164.90762"
+       x2="102.63543"
+       y2="153.54868" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -243,17 +253,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="344.59623"
-     inkscape:cy="87.12766"
+     inkscape:cx="181.59623"
+     inkscape:cy="110.12766"
      inkscape:document-units="mm"
      inkscape:current-layer="g1466"
      showgrid="false"
      inkscape:snap-nodes="true"
-     inkscape:object-nodes="true"
-     inkscape:object-paths="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1012"
-     inkscape:window-x="0"
+     inkscape:object-nodes="false"
+     inkscape:object-paths="true"
+     inkscape:window-width="1063"
+     inkscape:window-height="987"
+     inkscape:window-x="851"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:snap-others="false"
@@ -269,7 +279,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -460,6 +470,20 @@
        id="g1466"
        transform="translate(0,-13.364688)">
       <rect
+         y="180.40715"
+         x="-3.0451117"
+         height="11.358948"
+         width="63.744995"
+         id="rect1407"
+         style="opacity:1;vector-effect:none;fill:url(#linearGradient1437);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.52899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;vector-effect:none;fill:url(#linearGradient918);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.52899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect912"
+         width="10.156235"
+         height="11.358954"
+         x="62.70562"
+         y="180.40715" />
+      <rect
          y="167.04247"
          x="-3.0451117"
          height="11.358948"
@@ -530,13 +554,6 @@
            x="-0.69436187"
            y="160.30977"
            style="stroke-width:0.26458332">Python libraries</tspan></text>
-      <rect
-         y="180.40715"
-         x="-3.0451117"
-         height="11.358948"
-         width="75.906967"
-         id="rect1407"
-         style="opacity:1;vector-effect:none;fill:url(#linearGradient1437);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.52899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -548,6 +565,17 @@
            x="-0.69436193"
            y="187.03912"
            style="stroke-width:0.26458332">numpy</tspan></text>
+      <text
+         id="text916"
+         y="187.16824"
+         x="65.056366"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="187.16824"
+           x="65.056366"
+           id="tspan914"
+           sodipodi:role="line">lz4</tspan></text>
     </g>
   </g>
 </svg>
